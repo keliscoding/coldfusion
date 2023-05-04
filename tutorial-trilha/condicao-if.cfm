@@ -1,7 +1,9 @@
 <html lang="pt-br">    
-    <cfset nome = "Castelo">
+    <cfset nome = "Castel">
     <cfif nome equal "Castelo"> <!--- pode usar também eq ou is em vez de equal --->
-        "Seu nome é castelo"
+        Seu nome é Castelo
+    <cfelse>
+        Seu nome não é Castelo
     </cfif>
 <head>
     <meta charset="UTF-8">
