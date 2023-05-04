@@ -3,7 +3,7 @@
 <cfset idade = 40> <!-- numeric -->
 <cfset salario = 1000.50> <!-- numeric -->
 <cfset fumante = false> <!-- boolean -->
-
+<cfset frase = "ordem e progresso">
 
 <head>
     <meta charset="UTF-8">
@@ -12,6 +12,14 @@
     <title>Curso de ColdFusion</title>
 </head>
 <body>
-    <cfoutput>#nome#</cfoutput>
+    <cfoutput>
+        <li>#nome#</li>
+        <li>#UCase(frase)#</li>
+        <li>#lCase(frase)#</li>
+        <li>#reverse(frase)#</li>
+        <li>#left(frase,5)#</li>
+        <li>#right(frase,5)#</li>
+        <li>#mid(frase,5, 5)#</li>
+    </cfoutput>
 </body>
 </html>
