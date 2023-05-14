@@ -1,5 +1,5 @@
         <footer>
-            <h3>Um footer qualquer</h3>
+            <p>made with love by zam0k &#64; <cfoutput>#DatePart("yyyy", now())#</cfoutput></p>
         </footer>
     </body>
 </html>
