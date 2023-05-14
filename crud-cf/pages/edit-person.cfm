@@ -9,9 +9,9 @@
         id = URL.id;
         name = form.inputname;
         birthdate = form.inputbirthdate;
-
-    repo.updatePerson(id, name, birthdate);
+    
         try{
+            repo.updatePerson(id, name, birthdate);
             location("../index.cfm");
         } catch (any exception) {
             writeOutput(exception);

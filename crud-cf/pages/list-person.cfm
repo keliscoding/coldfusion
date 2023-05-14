@@ -2,7 +2,13 @@
     
 <cfscript>
     personRepo = new PersonRepository("oracle-db");
-    people = personRepo.getAllPeople();
+    
+    try{
+        people = personRepo.getAllPeople();
+    } catch (any exception) {
+        writeOutput(exception);
+    }
+    
 </cfscript>
 
 <cfinclude template="./header-html.cfm">

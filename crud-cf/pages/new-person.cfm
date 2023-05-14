@@ -9,8 +9,8 @@
         name = form.inputname;
         birthdate = form.inputbirthdate;
 
-        repo.createPerson(name, birthdate);
         try{
+            repo.createPerson(name, birthdate);
             location("../index.cfm");
         } catch (any exception) {
             writeOutput(exception);
